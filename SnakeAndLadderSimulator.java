@@ -33,7 +33,12 @@ public class SnakeAndLadderSimulator {
 		           break;
 		   }
 		System.out.println("The Position of Player:" +POSITION);
-		}
+		    if (POSITION > 100) {
+		        POSITION -= diceNumber;
+	                System.out.println("The Position of Player:" +POSITION);
+	            }
+	        }
+                System.out.println("The Position of Player:" +POSITION);
 	}
 
 }
