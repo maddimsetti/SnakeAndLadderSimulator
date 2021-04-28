@@ -10,6 +10,8 @@ public class SnakeAndLadderSimulator {
 		System.out.println("Welcome the Player to Starts The Snake And Ladder Game at position 0");
 
 		int POSITION = 0;
+
+		while ( POSITION < 100 ) {
 		int diceNumber = (int) Math.floor(Math.random() * 10) % 6 + 1;
 		System.out.println("The Value Of Dice is " +diceNumber);
 
@@ -31,7 +33,7 @@ public class SnakeAndLadderSimulator {
 		           break;
 		   }
 		System.out.println("The Position of Player:" +POSITION);
-
+		}
 	}
 
 }
